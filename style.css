@@ -1,0 +1,168 @@
+body {
+    background-color:#202535;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    opacity: 0.7;
+}
+
+.container {
+    flex-flow: column;
+    margin: 10%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 5fr 9fr;
+    grid-gap: 0;
+    padding: 0;
+    margin: 4% auto;
+    height: 75vh;
+    width: 70vw;
+    box-shadow: 0 0rem 2rem 0.5rem black;
+    border-radius: 1rem;
+}
+
+.grid-container > div {
+    margin: 0;
+}
+
+.col-1 {
+    /* background-color: #1A2330; */
+    border-radius: 1rem 0 0 1rem;
+    background-image: url("./images/sparkler.jpg");
+    background-size: cover;
+}
+
+.col-2 {
+    background-color: #202535;
+    padding: 2rem;
+}
+
+.col-3 {
+    background-image: url("./images/sparkler.jpg");
+    background-size: cover;
+    background-position: right;
+    border-radius: 0 1rem 1rem 0;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: flex-end;
+    /* opacity: 0.8; */
+}
+
+.main-icon {
+    font-size: 4rem;
+    margin: 1rem 0 2rem 0;
+}
+.user-sign {
+    display: flex;
+}
+
+.user-sign :first-child {
+    margin-right: 0.6rem;
+    color: rgb(224, 62, 122);
+    font-weight: bold;
+    transition: all .2s ease-in-out;
+}
+.user-sign :nth-child(2) {
+    margin-right: 0.6rem;
+}
+.user-sign :nth-child(3) {
+    margin-right: 0.6rem;
+    transition: all .2s ease-in-out;
+}
+button {
+    background-color: #202B60;
+    color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: #202B60; 
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all .2s ease-in-out;
+}
+
+button:focus {
+    outline: none;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form input[type=text] {
+    border: none;
+    border-bottom: 0.5px solid grey;
+    background-color: #202535;
+    color: white;
+    margin: 1rem 0;
+    padding: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.form input[type=submit] {
+    border: none;
+    border-bottom: 5px solid #5FC5BA;
+    background-color: #232D39;
+    color: white;
+    padding: 0.5rem;
+    margin: 2rem 0; 
+    font-size: 1rem;
+    text-transform: uppercase;  
+    outline: none;
+    transition: all .2s ease-in-out;
+}
+
+.form input[type=text]:focus {
+    outline: 0;
+    border-bottom: 1px solid #5FC5BA;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+nav {
+    text-align: right;
+    margin: 1rem 10%;
+    transform: translateY(50%);
+}
+
+.col-3 > div {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: flex-end;
+    margin: 20% 10%;
+    text-align: right;
+}
+
+hr {
+    width: 30%;
+    margin-right: 0;
+    margin-bottom: 1rem;
+    border: 0.5px solid red;
+}
+
+.col-3 > div :first-child{
+    font-size: 1.8rem;
+}
+
+.col-3 > div :nth-child(3) i {
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+/* HOVER STUFF */
+
+.col-3 > div :nth-child(3) i,
+.user-sign :first-child:hover, 
+.user-sign :nth-child(3):hover, 
+.form input[type=submit]:hover,
+button:hover {
+    cursor: pointer;
+    opacity: 0.85;
+    transform: scale(1.025)
+}
