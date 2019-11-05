@@ -27,7 +27,6 @@ body {
 }
 
 .col-1 {
-    /* background-color: #1A2330; */
     border-radius: 1rem 0 0 1rem;
     background-image: url("./images/sparkler.jpg");
     background-size: cover;
