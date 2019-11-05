@@ -1,1 +1,1 @@
-View mock here: https://wilfredloh.github.io/behance-mock
+View mock here: https://wilfredloh.github.io/css-exercise/
